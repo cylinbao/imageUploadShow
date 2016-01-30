@@ -30,7 +30,6 @@ function upload(response, postData){
 	response.writeHead(200, { 'Content-Type': 'text/plain' });
 	response.write("You have sent: " + querystring.parse(postData).text);
 	response.end();
-	//console.log(querystring.parse(postData).text);
 }
 
 exports.start = start;
